@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jym Managements</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsible.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #about-section {
+            display: none;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        #about-section h1 {
+            margin-bottom: 20px;
+        }
+
+        #about-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #about-section th, #about-section td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        #about-section th {
+            background-color: #f4f4f4;
+        }
+    </style>
+    <style>
+        #about-section, #registration-form {
+            display: none;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        #about-section h1, #registration-form h1 {
+            margin-bottom: 20px;
+        }
+
+        #about-section table, #registration-form form {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #about-section th, #about-section td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        #about-section th {
+            background-color: #f4f4f4;
+        }
+    </style>
+    <script>
+        function showAbout() {
+            document.getElementById("main-content").style.display = "none";
+            document.getElementById("about-section").style.display = "block";
+            document.getElementById("registration-form").style.display = "none";
+        }
+
+        function showHome() {
+            document.getElementById("about-section").style.display = "none";
+            document.getElementById("main-content").style.display = "block";
+            document.getElementById("registration-form").style.display = "none";
+        }
+
+        function showRegistrationForm() {
+            document.getElementById("main-content").style.display = "none";
+            document.getElementById("about-section").style.display = "none";
+            document.getElementById("registration-form").style.display = "block";
+        }
+
+        function validateForm() {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <section>
+            <nav class="display-flex Nevigation-bar">
+                <div>
+                    <h3 id="Secondary-font-color" class="Nav-logo-Name">Fitness</h3>
+                </div>
+                <div>
+                    <ul class="display-flex Nav-link">
+                        <li><a href="#" onclick="showHome()"><span id="Nav-Home">Home</span></a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" onclick="showAbout()">About</a></li>
+                    </ul>
+                </div>
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main id="main-content">
+        <!-- Your existing main content here -->
+        <section class="hero-bg">
+            <div class="display-flex bg-header">
+                <div class="hero-Container">
+                    <h1 class="hero-Title">
+                        Get body in <span id="seconday-font">shape</span>& stay healthy
+                    </h1>
+                    <p>
+                        A huge selection of health and fitness content, healthy recipes <br>and transformation stories to help you get fit and stay fit!
+                    </p>
+                    <div class="display-flex btn-deco">
+                        <button class="Font-Color primary-btn" type="button" onclick="showRegistrationForm()">Join Now!</button>
+                        <button class="Font-Color secondary-btn" type="button">Download App</button>
+                    </div>
+                </div>
+                <div class="hero-Container2">
+                    <img src="images/Images 2.png" alt="">
+                    <div>
+                        <button class="speacial-btn display-flex">
+                            <div class="speacial-btn-div1">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <!-- <div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Tz9d7By2ytQ?si=DtE1QlxphVK_GoLz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div> -->
+                            <div>
+                                <h1 class="video">350+ <br></h1>
+                                <p class="tutorial">Video tutorial</p>
+                            </div>
+                        </button>
+</div>
+                    <div>
+                        <button class="speacial-btn2">
+                            <h1 class="video2">500+ <br></h1>
+                            <p class="tutorial2">Free Workout Videos</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+</section>
+    </main>
+    <section id="about-section">
+        <h1>Group Members</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr>
+                <td>Md. Moshiur Rahman</td>
+                <td>1871</td>
+                <td>moshiurx74@gmail.com</td>
+                <td>01777465854</td>
+            </tr>
+            <tr>
+                <td>Md. Tanvirul Islam Rifat</td>
+                <td>1619</td>
+                <td>tanvir@gmail.com</td>
+                <td>0196586582</td>
+            </tr>
+            <tr>
+                <td>Md. Sajidul Islam</td>
+                <td>1726</td>
+                <td>sajid@gmail.com</td>
+                <td>01628564655</td>
+            </tr>
+            <tr>
+                <td>Farhan Sadik Shihab</td>
+                <td>1672</td>
+                <td>sihabur@gmail.com</td>
+                <td>01956585654</td>
+            </tr>
+            <tr>
+                <td>Taif Ahmed Shemul</td>
+                <td>1606</td>
+                <td>shimul@gmail.com</td>
+                <td>01752546598</td>
+            </tr>
+        </table>
+    </section>
+    <section id="registration-form">
+        <h1>Register</h1>
+        <form onsubmit="return validateForm()">
+            <label for="username">User Name:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirm-password">Confirm Password:</label><br>
+            <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+        <section class="habit">
+            <h1 class="habit-title">Change Your Habits</h1>
+            <p class="habit-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym.</p>
+            <div class="Habit-container">
+                <div class="image-container">
+                    <img src="images/image 3.png" alt="">
+                    <h1 class="habit-img-title">Movement</h1>
+                    <p class="habit-img-descrip">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/image 2.png" alt="">
+                    <h1 class="habit-img-title">Time</h1>
+                    <p class="habit-img-descrip">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/image 4.png" alt="">
+                    <h1 class="habit-img-title">Practice</h1>
+                    <p class="habit-img-descrip">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/image 5.png" alt="">
+                    <h1 class="habit-img-title">Weight Loss</h1>
+                    <p class="habit-img-descrip">We believe fitness should be accessible to everyone</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="Run">
+            <div class="Run-cointainer display-flex">
+                <div class="Run-Descrip-container">
+                    <h1 class="Run-conteiner-title">Run an Extra <br>Mile Easily</h1>
+                    <p class="Run-container-Descrip">
+                        We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.
+                    </p>
+                    <button class="Font-Color primary-btn" type="button">Join Now</button>
+                </div>
+                <div>
+                    <img class="Run-image" src="images/runCrp.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="As-My-Wish-container">
+                <h1 class="As-My-Wish-title">Find the perfect training program to reach<br>your loftiest goals</h1>
+            <div class="As-My-Wish-Programs">
+                <div>
+                    <h1>Fat Loss Programs</h1>
+                    <a href="https://www.muscleandstrength.com/workouts/fat-loss" target="_blank">
+                        <img src="images/As-My-1.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <h1>Muscle Building Programs</h1>
+                    <a href="https://www.muscleandstrength.com/workouts/muscle-building" target="_blank">
+                        <img src="images/As-My-2.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <h1>Strength Programs</h1>
+                    <a href="https://www.muscleandstrength.com/workouts/strength" target="_blank">
+                        <img src="images/As-My-3.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="BMI-Calculator">
+            <h1 class="BMI-Cal-Title">BMI Calculator</h1>
+            <p class="BMI-Cal-Descrip">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym.</p>
+        </section>
+
+        <section class="BMI-Calculation">
+            <div class="BMI-Container">
+                <div class="BMI-Div1">
+                    <h1 class="BMI-Div-title">BMI Calculator Chart</h1>
+                    <table>
+                        <tr>
+                            <th class="table-hader">BMI</th>
+                            <th class="table-hader">Weight Status</th>
+                        </tr>
+                        <tr>
+                            <th class="small-font">Below 18.5</th>
+                            <th class="small-font">Underweight</th>
+                        </tr>
+                        <tr>
+                            <th class="small-font">18.5 - 24.9</th>
+                            <th class="small-font">Healthy</th>
+                        </tr>
+                        <tr>
+                            <th class="small-font">25.0 - 29.9</th>
+                            <th class="small-font">Overweight</th>
+                        </tr>
+                        <tr>
+                            <th class="small-font">30.0 - and Above</th>
+                            <th class="small-font">Obese</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="BMI-Div2">
+                    <h1 class="BMI-Div-title2">Calculate your BMI</h1>
+                    <p class="small-font">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                    <section class="from-section">
+                        <form>
+                            <div class="input-container">
+                                <input type="text" placeholder="Height/cm">
+                                <input type="text" placeholder="Weight/kg">
+                            </div>
+                            <div class="input-container">
+                                <input type="text" placeholder="Age">
+                                <select class=".select">
+                                    <option value="">Sex</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="input-container">
+                                <select>
+                                    <option value="">Select an activity factor</option>
+                                    <option  value="one days">Exersise 1 Days in a Week</option>
+                                    <option  value="one days">Exersise 1 Days in a Week</option>
+                                    <option  value="three days">Exersise 2 Days - 4 Days in a Week</option>
+                                    <option  value="everydays">Exersise Everyday in a Week</option>
+                                    <option  value="never">Never Exersise</option>
+                                </select>
+                            </div>
+                            <button class="Font-Color bmi-btn primary-btn" type="button">Calculate</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="Our-Team">
+            <h1 class="team-title">Meet Our Team</h1>
+            <p class="team-description">
+                We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym. 
+            </p>
+            <div class="Team-conteinar">
+                <div class="team-image-container team-image1">
+                    <div class="team-identity">
+                        <span id="team-name">Jerome Bell</span><br>
+                        <span id="team-post">Trainer</span>
+                    </div>
+                </div>
+                <div class="team-image-container team-image2">
+                    <div class="team-identity">
+                        <span id="team-name">Cameron Williamson</span><br>
+                        <span id="team-post">Trainer</span>
+                    </div>
+                </div>
+                <div class="team-image-container team-image3">
+                   <div class="team-identity">
+                    <h3 id="team-name">Darrel Steward</h3>
+                    <span id="team-post">Trainer</span>
+                   </div>
+                </div>
+                <div class="team-image-container team-image4">
+                    <div class="team-identity">
+                        <span id="team-name">Dianne Russ</span><br>
+                        <span id="team-post">Trainer</span>
+                    </div>
+                </div>
+                <div class="team-image-container team-image5">
+                    <div class="team-identity">
+                        <span id="team-name">Cody Fisher</span><br>
+                        <span id="team-post">Trainer</span>
+                    </div>
+                </div>
+                <div class="team-image-container team-image6">
+                    <div class="team-identity">
+                        <span id="team-name">Theresa Webb</span><br>
+                        <span id="team-post">Trainer</span>
+                    </div>
+                </div>
+            </div>
+            <section class="video_section">
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Tz9d7By2ytQ?si=DtE1QlxphVK_GoLz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="Footer-Container">
+            <div class="foot-div1">
+                <h1 class="foot-div1-title">Fitness</h1>
+                <p class="foot-div1-descrip">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+            </div>
+            <div class="foot-div2-conteinar">
+                <div class="foot-div2-con1">
+                    <h1 class="foot-div2-con-title">Get Started</h1>
+                    <ul>
+                        <li><a href="#">Service</a></li><br>
+                        <li><a href="#">Contact Us</a></li><br>
+                        <li><a href="#">Affiliate Program</a></li><br>
+                        <li><a href="#">About Us</a></li><br>
+                    </ul>
+                </div>
+                <div class="foot-div2-con2">
+                    <h1 class="foot-div2-con-title">Get Started</h1>
+                    <ul>
+                        <li><a href="#">Fitness</a></li><br>
+                        <li><a href="#">Platform</a></li><br>
+                        <li><a href="#">Workout Libary</a></li><br>
+                        <li><a href="#">App Design</a></li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="small">All right reserved @Fitness 2024</p>
+    </footer>
+</body>
+</html>

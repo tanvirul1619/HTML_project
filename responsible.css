@@ -1,0 +1,156 @@
+ @media screen and ( max-width:576px ) {
+    .Nevigation-bar{
+        padding: 52px 20px 0 20px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .Nav-link{
+        display: none;
+    }
+    .bg-header,
+    .Run-cointainer,
+    .BMI-Container,
+    .Footer-Container,
+    .foot-div2-conteinar{
+        flex-direction: column;
+    }
+    .hero-Container{
+       padding: 0 20px 0 20px;
+       margin-top: 51px;
+    }
+    .hero-Container2{
+        margin-bottom: 20px;
+    }
+    .speacial-btn2{
+        margin-right:60px;
+        margin-top:-55px;
+    }
+    .speacial-btn{
+        margin-bottom: 180px;
+        margin-left: 140px;
+    }
+    .hero-Title{
+        font-size: 36px;
+        font-weight: 900;
+        margin-bottom: 36px;
+        width: 285px;
+    }
+    #seconday-font{
+        font-size: 76px;
+    }
+    .habit{
+        margin-left: 28px;
+        margin-right: 28px;
+    }
+    .Habit-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+    .habit-title,
+    .BMI-Cal-Title{
+        font-size: 32px;
+    }
+    .image-container{
+        margin-bottom: 40px;
+    }
+    .Run-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .Run{
+       margin-left: 15px;
+       margin-right: 15px;
+       padding: 10px;
+    }
+    .Run-cointainer{
+        margin: 0 auto;
+        padding: 15px;
+    }
+    .Run-Descrip-container{
+        width: 300px;
+        height: 264px;
+        margin-bottom: 50px;
+    }
+    .BMI-Calculator{
+       padding: 30px 20px 0 20px;
+    }
+    .BMI-Calculation{
+        padding: 20px;
+    }
+    .BMI-Div2,
+    .foot-div2-con2,
+    .foot-div2-con1,
+    .foot-div2-conteinar,
+    .foot-div1{
+        width: 100%;
+    }
+    input, select {
+        width: 100%;
+    }
+    .input-container{
+        width:100%
+    }
+    .BMI-Container{
+        gap: 48px;
+    }
+    .BMI-Div-title{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .BMI-Div-title2{
+        font-size: 14px;
+    }
+    .Team-conteinar,
+    .As-My-Wish-Programs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer{
+        padding: 20px;
+    }
+    .Team-conteinar{
+        margin: 20px;
+    }
+    .team-image1,
+    .team-image2,
+    .team-image3,
+    .team-image4,
+    .team-image5,
+    .team-image6{
+        width: 99%;
+    }
+    .team-image1,
+    .team-image4{
+        display: none;
+    }
+    .primary-btn,
+    .secondary-btn{
+        width: 169px;
+        height: 54px;
+    }
+    .secondary-btn{
+        padding: 16px 20px 16px 20px;
+    }
+    .Run-cointainer{
+        margin:5px;
+        width: 100%;
+    }
+    .As-My-Wish-title{
+        padding:15px;
+    }
+    .BMI-Cal-Title{
+        margin-top: 20px;
+    }
+    .BMI-Cal-Descrip,
+    .BMI-Calculation{
+        margin-bottom: 30px;
+    }
+    .As-My-Wish-Programs{
+        margin: 0 auto;
+    }
+    .As-My-Wish-Programs img,
+    .As-My-Wish-Programs h1{
+        width: 90%;
+    }
+ }
